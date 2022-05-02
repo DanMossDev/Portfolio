@@ -1,8 +1,8 @@
 :root
 {
-    background-color: hsla(252, 100%, 7%, 0.74);
+    background-color: gray;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+    font-size: 3vw;
     /* background: linear-gradient(90deg, #e0b1d1, #FFFFFF, #ccf3e7) */
 }
 
@@ -10,32 +10,15 @@ body {
     margin: 0px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 3em;
-    top: 3em;
-    margin: 0;
+nav {
+    position: fixed;
+    right: 1em;
+    z-index: 10;
 }
 
-.sidebar {
-    background-color: hsla(252, 100%, 7%, 0.94);
-    text-align: right;
-    height: 100vh;
-    width: 20%;
-    z-index: 10;
-    padding-top: .5em;
-    position: fixed;
-}
 
 .main {
-    margin-left: 20%;
-    padding: 2%;
-}
-
-@media (max-width: 1280px) {
-    h2 {
-        font-size: 1em;
-    }
+    padding: 0;
 }
 
 a {
@@ -45,10 +28,44 @@ a {
 
 a:hover {
     color: hsl(350, 100%, 88%);
-    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .p1 {
     font-size: 1em;
     padding: 5%;
+}
+
+.frontpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(252, 100%, 7%, 0.74);
+}
+
+.headshot {
+    opacity: 0.7;
+    max-height: 80vh;
+    max-width: 90vw;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.title {
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+    text-align: left;
+    font-size: 8vw;
+}
+
+.intro {
+    background-color: whitesmoke;
+    margin: 0;
+    margin-top: -3vw;
+    margin-bottom: -3vw;
 }
