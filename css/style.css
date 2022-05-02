@@ -1,5 +1,54 @@
-*
+:root
 {
-    padding: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: hsla(252, 100%, 7%, 0.74);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    /* background: linear-gradient(90deg, #e0b1d1, #FFFFFF, #ccf3e7) */
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    top: 3em;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: hsla(252, 100%, 7%, 0.94);
+    text-align: right;
+    height: 100vh;
+    width: 20%;
+    z-index: 10;
+    padding-top: .5em;
+    position: fixed;
+}
+
+.main {
+    margin-left: 20%;
+    padding: 2%;
+}
+
+@media (max-width: 1280px) {
+    h2 {
+        font-size: 1em;
+    }
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(350, 100%, 88%);
+    font-style: italic;
+}
+
+.p1 {
+    font-size: 1em;
+    padding: 5%;
 }
