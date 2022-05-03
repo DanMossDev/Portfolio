@@ -1,8 +1,10 @@
 :root
 {
-    background-color: gray;
+    background-color: hsla(252, 100%, 7%, 0.74);
     font-family: 'Courier New', Courier, monospace;
     font-size: 3vw;
+    max-width: 100%;
+    overflow-x: hidden;
     /* background: linear-gradient(90deg, #e0b1d1, #FFFFFF, #ccf3e7) */
 }
 
@@ -14,6 +16,8 @@ nav {
     position: fixed;
     right: 1em;
     z-index: 10;
+    color: white;
+    text-shadow:1px 1px 10px rgb(0, 0, 0), 1px 1px 10px rgb(0, 0, 0);
 }
 
 
@@ -22,8 +26,9 @@ nav {
 }
 
 a {
-    color: hsl(0, 0%, 100%);
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    text-shadow: 1vmax, 1vmax, black;
 }
 
 a:hover {
@@ -57,10 +62,17 @@ a:hover {
 
 .title {
     position: absolute;
-    bottom: 10vh;
-    left: 10vw;
+    top: 20vmax;
+    left: 10vmax;
     text-align: left;
-    font-size: 8vw;
+    font-size: 6vmax;
+    font-weight: bolder;
+    color: white;
+}
+
+.title1 {
+    font-size: 3vmax;
+    font-style: italic;
 }
 
 .intro {
@@ -68,4 +80,27 @@ a:hover {
     margin: 0;
     margin-top: -3vw;
     margin-bottom: -3vw;
+}
+
+.projectimg {
+    width: 25vmax;
+}
+
+.container:hover {
+    box-shadow: 0 8vmax 16vmax 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 10px;
+    margin: 3vmax;
+    width: 25vmax;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    float: left;
+}
+
+.projecttitle {
+    margin: 0;
 }
