@@ -1,11 +1,12 @@
 :root
 {
     background-color: hsla(252, 100%, 7%, 0.74);
+    background: linear-gradient(70deg, hsla(252, 100%, 7%, 0.8), hsla(252, 100%, 7%, .9));
     font-family: 'Courier New', Courier, monospace;
-    font-size: 3vw;
+    font-size: 3vmin;
     max-width: 100%;
     overflow-x: hidden;
-    /* background: linear-gradient(90deg, #e0b1d1, #FFFFFF, #ccf3e7) */
+
 }
 
 body {
@@ -18,6 +19,7 @@ nav {
     z-index: 10;
     color: white;
     text-shadow:1px 1px 10px rgb(0, 0, 0), 1px 1px 10px rgb(0, 0, 0);
+    font-size: 4vmax;
 }
 
 
@@ -28,7 +30,6 @@ nav {
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    text-shadow: 1vmax, 1vmax, black;
 }
 
 a:hover {
@@ -48,7 +49,6 @@ a:hover {
     justify-content: space-between;
     width: 100vw;
     height: 100vh;
-    background-color: hsla(252, 100%, 7%, 0.74);
 }
 
 .headshot {
@@ -68,6 +68,8 @@ a:hover {
     font-size: 6vmax;
     font-weight: bolder;
     color: white;
+    z-index: 5;
+    text-shadow:1px 1px 10px rgb(0, 0, 0), 1px 1px 10px rgb(0, 0, 0);
 }
 
 .title1 {
@@ -78,8 +80,9 @@ a:hover {
 .intro {
     background-color: whitesmoke;
     margin: 0;
-    margin-top: -3vw;
-    margin-bottom: -3vw;
+    margin-top: -3vmin;
+    margin-bottom: -3vmin;
+    text-align: justify;
 }
 
 .projectimg {
@@ -103,4 +106,15 @@ a:hover {
 
 .projecttitle {
     margin: 0;
+}
+
+.clickme {
+    background-color: hsla(252, 100%, 7%, 0.8);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vmin;
 }
