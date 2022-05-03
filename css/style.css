@@ -41,6 +41,7 @@ nav ul li {
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    transition-duration: 0.2s;
 }
 
 a:hover {
@@ -135,6 +136,12 @@ a:hover {
     text-decoration: none;
     display: inline-block;
     font-size: 2vmin;
+    transition-duration: 0.1s;
+}
+
+.clickme:hover {
+    background-color: hsl(350, 100%, 88%);
+    color: hsla(252, 100%, 7%, 0.8);
 }
 
 
