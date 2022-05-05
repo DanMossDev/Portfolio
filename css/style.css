@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
 :root
 {
     background-color: hsla(252, 100%, 7%, 0.74);
@@ -89,6 +91,11 @@ nav a:hover {
     text-shadow:1px 1px 10px rgb(0, 0, 0), 1px 1px 10px rgb(0, 0, 0);
 }
 
+.name {
+    font-family: 'Koulen', cursive;
+    line-height: 0;
+}
+
 .title1 {
     font-size: 3vmax;
     font-style: italic;
@@ -152,6 +159,7 @@ nav a:hover {
 
 
 @media screen and (min-width: 644px)  {
+
     nav ul {
         text-align: center;
     }
