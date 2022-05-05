@@ -60,7 +60,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: space-between;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     height: calc(var(--vh, 1vh) * 100);
     position: relative;
 }
