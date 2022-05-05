@@ -72,6 +72,8 @@ nav a:hover {
     right: 0;
     bottom: -10vmin;
     z-index: 0;
+    -webkit-filter: drop-shadow(0vmax 0vmax 2vmax black);
+    filter: drop-shadow(0vmax 0vmax 2vmax black);
 }
 
 .title {
