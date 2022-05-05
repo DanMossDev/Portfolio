@@ -66,11 +66,11 @@ nav a:hover {
 
 .headshot {
     opacity: 0.7;
-    max-height: 110vh;
+    max-height: 100vh;
     max-width: 90vw;
     position: absolute;
     right: 0;
-    bottom: -10vmin;
+    bottom: 0;
     z-index: 0;
     -webkit-filter: drop-shadow(0vmax 0vmax 2vmax black);
     filter: drop-shadow(0vmax 0vmax 2vmax black);
@@ -149,6 +149,11 @@ nav a:hover {
     color: hsla(252, 100%, 7%, 0.8);
 }
 
+@media screen and (max-width: 719px) {
+    .headshot {
+        bottom: -4vh;
+    }
+}
 
 @media screen and (min-width: 644px)  {
     nav ul {
