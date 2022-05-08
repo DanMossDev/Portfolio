@@ -199,6 +199,11 @@ nav a:hover {
 
 @media screen and (min-width: 644px)  {
 
+    nav {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
     nav ul {
         text-align: center;
     }
@@ -210,6 +215,12 @@ nav a:hover {
         /* border-left: 3px solid white; */
         padding-left: 2vh;
         padding-right: 2vh;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        height: 6.25%;
     }
 }
 
