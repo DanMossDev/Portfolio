@@ -1,3 +1,5 @@
+//Handles the navbar being sticky
+
 let navbar = document.getElementById("navbar")
 let sticky = navbar.offsetTop;
 
