@@ -291,13 +291,16 @@ nav a:hover {
 
 
 /* On scroll become visible */
+.fade {
+    transition-duration: 1.5s;
+}
 .notloaded {
     opacity: 0;
-    transform: translate(5rem, 0);
+    transform: translate(-5rem, 0);
     visibility: hidden;
-    transition-duration: 2s;
+    overflow: hidden;
   }
-  .loaded {
+  .notloaded.transition {
     opacity: 1;
     transform: translate(0);
     visibility: visible;
