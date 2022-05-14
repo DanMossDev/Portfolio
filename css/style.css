@@ -207,6 +207,7 @@ nav a:hover {
 } */
 
 
+/* Media Queries */
 @media screen and (min-width: 644px)  {
 
     nav {
@@ -252,6 +253,8 @@ nav a:hover {
 
 
 
+
+/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -285,3 +288,17 @@ nav a:hover {
         transform: translate(0)
     }
 }
+
+
+/* On scroll become visible */
+.notloaded {
+    opacity: 0;
+    transform: translate(5rem, 0);
+    visibility: hidden;
+    transition-duration: 2s;
+  }
+  .loaded {
+    opacity: 1;
+    transform: translate(0);
+    visibility: visible;
+  }
