@@ -4,7 +4,7 @@ let navbar = document.getElementById("navbar")
 let sticky = navbar.offsetTop;
 
 
-window.onscroll = function() {checkSticky()};
+window.onscroll = function() {checkSticky(); checkLoad()};
 
 function checkSticky() {
     if (window.pageYOffset >= sticky) {
@@ -18,8 +18,6 @@ function checkSticky() {
 
 //Handles items fading in on scroll
 let loadArray = document.getElementsByClassName("notloaded");
-
-window.onscroll = function() {checkLoad()};
 
 function checkLoad() {
     for (let load of loadArray) {
