@@ -13,7 +13,7 @@ function Navbar() {
       window.removeEventListener('scroll', onScroll);
       window.addEventListener('scroll', onScroll, { passive: true });
       return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, []); 
 
   return <nav id="navbar" className={offset >= window.innerHeight - 50 ? "sticky" : ""}>
   <ul>
