@@ -11,7 +11,7 @@ export default function Project({setCurrentProject, title, liveURL, gitURL, imgU
           <h4 className="projecttitle">
             <b>{title}</b>
           </h4>
-          <p className="projecttitle">
+          <p className="project-description">
             {bio}
           </p>
           <hr />
