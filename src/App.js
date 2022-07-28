@@ -1,6 +1,6 @@
 import './App.css';
 import tindie from './images/tindie.jpg'
-import worldle from './images/worldle.jpg'
+import allaboard from './images/allaboard.JPG'
 import spotyou from './images/spotyou.jpg'
 import { useState } from 'react';
 import Navbar from './components/Navbar'
@@ -19,8 +19,8 @@ function App() {
     <About />
     <section id="projects" className="projects">
       <Project setCurrentProject={setCurrentProject} title="Tindie" liveURL="https://danmossdev.github.io/Tindie/" gitURL="https://github.com/DanMossDev/Tindie" imgURL={tindie} bio="Match with your perfect indie game"/>
-      <Project setCurrentProject={setCurrentProject} title="Spot|You" liveURL="https://danmossdev.github.io/ill-spot-you-bro/" gitURL="https://github.com/DanMossDev/ill-spot-you-bro/" imgURL={spotyou} bio="Transfer Spotify playlists to YouTube"/>
-      <Project setCurrentProject={setCurrentProject} title="Worldle" liveURL="https://danmossdev.github.io/Worldle/" gitURL="https://github.com/DanMossDev/Worldle" imgURL={worldle} bio="A geography game to boggle the mind"/>
+      <Project setCurrentProject={setCurrentProject} title="Spot|You" liveURL="https://danmossdev.github.io/ill-spot-you-bro/" gitURL="https://github.com/DanMossDev/ill-spot-you-bro/" imgURL={spotyou} bio="Transfer from Spotify to YouTube"/>
+      <Project setCurrentProject={setCurrentProject} title="All A-Board" liveURL="https://danmossdev.github.io/all-a-board/" gitURL="https://github.com/DanMossDev/all-a-board" imgURL={allaboard} bio="Social media for bored-board gamers"/>
     </section>
     <ProjectDetails currentProject={currentProject} setCurrentProject={setCurrentProject}/>
     </div>
