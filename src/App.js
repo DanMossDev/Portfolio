@@ -1,8 +1,9 @@
 import './App.css';
+import headshot from './images/headshot.png'
 import tindie from './images/tindie.jpg'
 import allaboard from './images/allaboard.JPG'
 import spotyou from './images/spotyou.jpg'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar'
 import Landing from './components/Landing';
 import About from './components/About';
@@ -11,11 +12,19 @@ import ProjectDetails from './components/ProjectDetails';
 
 function App() {
   const [currentProject, setCurrentProject] = useState()
+  const [imageLoaded, setImageLoaded] = useState(false)
 
-  return <>
+  useEffect(() => {
+    const img = new Image()
+    img.src = headshot
+    img.onload = () => setImageLoaded(true)
+  }, [])
+
+
+  return imageLoaded ? <>
     <Navbar />
-    <div className="main">
-    <Landing />
+    <main className="main">
+    <Landing/>
     <About />
     <section id="projects" className="projects">
       <Project setCurrentProject={setCurrentProject} title="Tindie" liveURL="https://danmossdev.github.io/Tindie/" gitURL="https://github.com/DanMossDev/Tindie" imgURL={tindie} bio="Match with your perfect indie game"/>
@@ -23,8 +32,18 @@ function App() {
       <Project setCurrentProject={setCurrentProject} title="All A-Board" liveURL="https://danmossdev.github.io/all-a-board/" gitURL="https://github.com/DanMossDev/all-a-board" imgURL={allaboard} bio="Social media for bored-board gamers"/>
     </section>
     <ProjectDetails currentProject={currentProject} setCurrentProject={setCurrentProject}/>
-    </div>
-  </>
+    </main>
+  </> : <main className="loading-parent">
+    <div class="wrapper">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <span>Loading</span>
+      </div>
+  </main>
 }
 
 export default App;
