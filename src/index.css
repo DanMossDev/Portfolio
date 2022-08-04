@@ -127,6 +127,16 @@ nav a:hover {
     position:relative;
 }
 
+.carousel {
+    text-align: center;
+}
+
+.skill-img {
+    padding: 1rem;
+    max-height: 25vh;
+    max-width: 25vw;
+}
+
 .projectimg {
     width: 25vmax;
 }
