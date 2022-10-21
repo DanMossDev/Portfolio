@@ -3,12 +3,15 @@ import headshot from './images/headshot.png'
 import tindie from './images/tindie.jpg'
 import allaboard from './images/allaboard.JPG'
 import spotyou from './images/spotyou.jpg'
+import justintime from './images/JiT_SS.png'
+import soulsiphon from './images/SS_SS.png'
 import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar'
 import Landing from './components/Landing';
 import About from './components/About';
 import Project from './components/Project';
 import ProjectDetails from './components/ProjectDetails';
+import Game from './components/Game';
 
 function App() {
   const [currentProject, setCurrentProject] = useState()
@@ -26,6 +29,11 @@ function App() {
     <main className="main">
     <Landing/>
     <About />
+    <section id="games" className="games">
+      <h4 className="projectsection">Click image to get live version</h4>
+      <Game setCurrentProject={setCurrentProject} title="Just in Time" liveURL="https://purplepuffer.itch.io/just-in-time" gitURL="https://github.com/DanMossDev/just-in-time" imgURL={justintime} bio="Megacorp warehouse worker simulator"/>
+      <Game setCurrentProject={setCurrentProject} title="Soul Siphon" liveURL="https://purplepuffer.itch.io/soul-siphon" gitURL="https://github.com/DanMossDev/SoulSiphon" imgURL={soulsiphon} bio="Steal your enemies' magical powers, but at what cost..."/>
+    </section>
     <section id="projects" className="projects">
       <Project setCurrentProject={setCurrentProject} title="Tindie" liveURL="https://danmossdev.github.io/Tindie/" gitURL="https://github.com/DanMossDev/Tindie" imgURL={tindie} bio="Match with your perfect indie game"/>
       <Project setCurrentProject={setCurrentProject} title="Spot|You" liveURL="https://danmossdev.github.io/ill-spot-you-bro/" gitURL="https://github.com/DanMossDev/ill-spot-you-bro/" imgURL={spotyou} bio="Transfer from Spotify to YouTube"/>
@@ -34,13 +42,13 @@ function App() {
     <ProjectDetails currentProject={currentProject} setCurrentProject={setCurrentProject}/>
     </main>
   </> : <main className="loading-parent">
-    <div class="wrapper">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="shadow"></div>
-          <div class="shadow"></div>
-          <div class="shadow"></div>
+    <div className="wrapper">
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="shadow"></div>
+          <div className="shadow"></div>
+          <div className="shadow"></div>
           <span>Loading</span>
       </div>
   </main>

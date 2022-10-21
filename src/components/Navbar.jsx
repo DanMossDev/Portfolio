@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import CV from '../images/DanielMoss_CV.pdf';
 
 export default function Navbar() {
     const [offset, setOffset] = useState(0);
@@ -19,7 +20,10 @@ export default function Navbar() {
         <a href="#about">About</a>
       </li>
       <li>
-        <a href="#projects">Projects</a>
+        <a href="#games">Projects</a>
+      </li>
+      <li>
+        <a href={CV} download>CV</a>
       </li>
     </ul>
   </nav>

@@ -20,7 +20,6 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                 </div>
                 <table>
                     <tbody>
-                    <tr><th colSpan="2"><h5>Technologies Used</h5></th></tr>
                     <tr>
                         <th>Backend</th>
                         <th>Frontend</th>
@@ -58,7 +57,6 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                 </div>
                 <table>
                     <tbody>
-                    <tr><th colSpan="2"><h5>Technologies Used</h5></th></tr>
                     <tr>
                         <th>Frontend</th>
                     </tr>
@@ -91,7 +89,6 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                 </div>
                 <table>
                     <tbody>
-                    <tr><th colSpan="2"><h5>Technologies Used</h5></th></tr>
                     <tr>
                         <th>Backend</th>
                         <th>Frontend</th>
@@ -106,6 +103,69 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                         <img src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="JS logo"/>
                         <img src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3 logo"/>                 
                     </td></tr>
+                    </tbody>
+                </table>
+            </section>
+            </>
+        }
+        case 'Just in Time': {
+            return <>
+            <div className="details-box" onClick={() => setCurrentProject(null)}></div>
+            <section className="details">
+                <h2>{currentProject}</h2>
+                <h5>"Endure the stress of working in a... legally distinct company named after a rainforest... warehouse!"</h5>
+                <div className="details-description">
+                    <pp>
+                    Just in Time is a fun little Roguelite game where you play as the sole worker in a warehouse as customers flood in ever faster each day.
+                    It can be thought of a little like Plate Up! but in a warehouse instead of a restaurant, and from a first person perspective.
+                    At the end of each day, you are able to select one of two random upgrades, with some of these such upgrades being the ability to sprint,
+                    crouch under shelves, jump inhumanely high, get a tablet which displays all of the waiting orders, and restock the shelves.
+                    </pp><ul>
+                    <strong>Skills / Design Patterns / Tools</strong>
+                    <li>Finite state machines / Singletons / Observers</li>
+                    <li>Custom tool for updating all fonts with a single click</li>
+                    <li>Object pools with built in randomisation</li>
+                    </ul>
+                </div>
+                <table>
+                    <tbody>
+                    <td>
+                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
+                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
+                    </td>
+                    </tbody>
+                </table>
+            </section>
+            </>
+        }
+        case 'Soul Siphon': {
+            return <>
+            <div className="details-box" onClick={() => setCurrentProject(null)}></div>
+            <section className="details">
+                <h2>{currentProject}</h2>
+                <h5>"Gain power by devouring your foes, but lose yourself in the process..."</h5>
+                <div className="details-description">
+                    <pp>
+                    Soul Siphon is a 2D platformer based around the idea of a mage who can absorb others' magic powers.
+                    In its current state, it is just a tech demo showing off the physics based magic abilities and the
+                    magic swapping mechanics. You can pick up a "soul" at any point and absorb that power, but doing so
+                    replaces the power you currently have; sort of similar to Kirby.
+                    
+                    </pp><ul>
+                    <strong>Skills / Design Patterns / Tools</strong>
+                    <li>Line renderer which accurately draws the path of outgoing projectiles</li>
+                    <li>Physics based spells such as a black hole which sucks in enemies and flings the player</li>
+                    <li>Use of A* and states to implement basic AI</li>
+                    <li>Custom tool which creates shadow casters on a tile map</li>
+                    <li>Weapon swapping with customisable stats all exposed to the editor for development</li>
+                    </ul>
+                </div>
+                <table>
+                    <tbody>
+                    <td>
+                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
+                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
+                    </td>
                     </tbody>
                 </table>
             </section>

@@ -134,11 +134,14 @@ nav a:hover {
 .skill-img {
     padding: 1rem;
     max-height: 25vh;
-    max-width: 25vw;
 }
 
 .projectimg {
     width: 25vmax;
+}
+
+.gameimg {
+    width: 60vmax;
 }
 
 .container:hover {
@@ -152,11 +155,38 @@ nav a:hover {
     overflow: hidden;
 }
 
+.projectsection {
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
 .container {
     padding: 10px;
     margin: 3vmax 0;
 
     width: 25vmax;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: inline-block;
+    border-bottom: .5vmin solid hsl(350, 100%, 80%);
+    border-left: .75vmin solid hsl(350, 100%, 80%);
+    border-radius: 1vmin;
+}
+
+.games {
+    justify-content: space-around;
+    display: grid;
+    overflow: hidden;
+}
+
+.game {
+    padding: 10px;
+    margin: 3vmax 0;
+    width: 75vmax;
     background-color: whitesmoke;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -189,7 +219,7 @@ nav a:hover {
 }
 
 .clickme:hover {
-    background-color: hsl(350, 100%, 88%);
+    background-color: hsl(350, 100%, 80%);
 }
 
 ::-webkit-scrollbar {
