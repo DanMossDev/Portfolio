@@ -21,7 +21,7 @@ export default function About() {
       </Carousel>
       <p className="p1 loaded fade">
         I'm a software developer from the North West who loves building games in
-        C# and C++ using Unity/Unreal, has professional experience creating games using C# and PixiJS,
+        C# using Unity (and is just starting to pick up C++/Unreal), has professional experience creating games using C# and PixiJS,
         and developing for the web using JavaScript, React, Python, PostgreSQL, and more.
         <br />
         <br />
@@ -39,6 +39,11 @@ export default function About() {
         Northcoders bootcamp to improve my fundamentals of coding, and since then I've been working
         as a game developer at Crucible Gaming.
         <br />
+        <br />
+        My current project is a top secret D&D style CRPG taking inspiration from Divinity and Fallout.
+        My focus for this project is to implement high quality code through use of design patterns, and
+        to create a bunch of integrated systems. So far, I have a spell book system sorted and I'm
+        getting to work on the turn based combat system now.
       </p>
   </section>
   }
