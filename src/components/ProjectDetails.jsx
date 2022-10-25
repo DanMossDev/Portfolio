@@ -125,6 +125,7 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                     <li>Finite state machines / Singletons / Observers</li>
                     <li>Custom tool for updating all fonts with a single click</li>
                     <li>Object pools with built in randomisation</li>
+                    <a href="https://youtu.be/qG7T6AR38rM" target="_blank" rel="noreferrer">Watch a gameplay demo here</a>
                     </ul>
                 </div>
                 <table>
@@ -158,6 +159,7 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                     <li>Use of A* and states to implement basic AI</li>
                     <li>Custom tool which creates shadow casters on a tile map</li>
                     <li>Weapon swapping with customisable stats all exposed to the editor for development</li>
+                    <a href="https://youtu.be/2RTPrV8qXr8" target="_blank" rel="noreferrer">Watch a gameplay demo here</a>
                     </ul>
                 </div>
                 <table>
