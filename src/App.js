@@ -3,6 +3,7 @@ import headshot from './images/headshot.png'
 import tindie from './images/tindie.jpg'
 import allaboard from './images/allaboard.JPG'
 import spotyou from './images/spotyou.jpg'
+import outofwater from './images/fits_thumb.png'
 import justintime from './images/JiT_SS.png'
 import soulsiphon from './images/SS_SS.png'
 import { useEffect, useState } from 'react';
@@ -31,6 +32,7 @@ function App() {
     <About />
     <section id="games" className="games">
       <h4 className="projectsection">Click image to get live version</h4>
+      <Game setCurrentProject={setCurrentProject} title="Out of Water: Plenty More Fish in the Sea" liveURL="https://purplepuffer.itch.io/out-of-water" gitURL="https://github.com/DanMossDev/game-off-22" imgURL={outofwater} bio="Fast paced physics based platformer"/>
       <Game setCurrentProject={setCurrentProject} title="Just in Time" liveURL="https://purplepuffer.itch.io/just-in-time" gitURL="https://github.com/DanMossDev/just-in-time" imgURL={justintime} bio="Megacorp warehouse worker simulator"/>
       <Game setCurrentProject={setCurrentProject} title="Soul Siphon" liveURL="https://purplepuffer.itch.io/soul-siphon" gitURL="https://github.com/DanMossDev/SoulSiphon" imgURL={soulsiphon} bio="Steal your enemies' magical powers, but at what cost..."/>
     </section>

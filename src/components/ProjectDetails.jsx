@@ -108,6 +108,39 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
             </section>
             </>
         }
+        case 'Out of Water: Plenty More Fish in the Sea': {
+            return <>
+            <div className="details-box" onClick={() => setCurrentProject(null)}></div>
+            <section className="details">
+                <h2>{currentProject}</h2>
+                <h5>"A physics based platformer inspired by early 3D Sonic the Hedgehog games created for Game Off 2022"</h5>
+                <div className="details-description">
+                    <pp>
+                    Out of Water is a platformer created with a few of my friends as part of GitHub's Game Off 2022 game jam.
+                    I was the gameplay programmer, as well as designer and musician. As a team of three, one of the others made
+                    the art/animations, and the other created an API which I interfaced with the implement leaderboards.
+                    <br/>The game features a protagonist rushing to make it to school on time, utilising physics based movement to build 
+                    and maintain speed, and using this speed to interact with elements in the world such as ramps and bounce pads to
+                    take shortcuts. The game ends with a boss fight, and users can upload high scores.
+                    </pp><ul>
+                    <strong>Skills / Design Patterns / Tools</strong>
+                    <li>External API / Finite state machines / Singletons</li>
+                    <li>Boss enemy with built out AI using custom finite state machine</li>
+                    <li>Custom physics implemented on top of rigid bodies</li>
+                    {/* <a href="https://youtu.be/qG7T6AR38rM" target="_blank" rel="noreferrer">Watch a gameplay demo here</a> */}
+                    </ul>
+                </div>
+                <table>
+                    <tbody>
+                    <td>
+                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
+                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
+                    </td>
+                    </tbody>
+                </table>
+            </section>
+            </>
+        }
         case 'Just in Time': {
             return <>
             <div className="details-box" onClick={() => setCurrentProject(null)}></div>
