@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.540a367b.css",
-    "main.js": "/Portfolio/static/js/main.262e0073.js",
+    "main.js": "/Portfolio/static/js/main.391b4ef4.js",
     "static/js/787.1254d44d.chunk.js": "/Portfolio/static/js/787.1254d44d.chunk.js",
     "static/media/headshot.png": "/Portfolio/static/media/headshot.f2fd0d0f9baa922d9901.png",
     "static/media/JiT_SS.png": "/Portfolio/static/media/JiT_SS.45c637a6e13dc56c239e.png",
+    "static/media/fits_thumb.png": "/Portfolio/static/media/fits_thumb.667e1d3d5be36ee3a64f.png",
     "static/media/SS_SS.png": "/Portfolio/static/media/SS_SS.52db07f1257553dcdd4b.png",
-    "static/media/DanielMoss_CV.pdf": "/Portfolio/static/media/DanielMoss_CV.85c03e17f2e46143262e.pdf",
+    "static/media/DanielMoss_CV.pdf": "/Portfolio/static/media/DanielMoss_CV.6266b184e1eab00f1156.pdf",
     "static/media/allaboard.JPG": "/Portfolio/static/media/allaboard.88d4b509b08b669b0143.JPG",
     "static/media/tindie.jpg": "/Portfolio/static/media/tindie.65c6aa96366c3172f9ed.jpg",
     "static/media/spotyou.jpg": "/Portfolio/static/media/spotyou.c9c4f5a496830a607cd4.jpg",
     "index.html": "/Portfolio/index.html",
     "main.540a367b.css.map": "/Portfolio/static/css/main.540a367b.css.map",
-    "main.262e0073.js.map": "/Portfolio/static/js/main.262e0073.js.map",
+    "main.391b4ef4.js.map": "/Portfolio/static/js/main.391b4ef4.js.map",
     "787.1254d44d.chunk.js.map": "/Portfolio/static/js/787.1254d44d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.540a367b.css",
-    "static/js/main.262e0073.js"
+    "static/js/main.391b4ef4.js"
   ]
 }
