@@ -1,114 +1,104 @@
 export default function ProjectDetails({currentProject, setCurrentProject}) {
     switch(currentProject) {
-        case 'Tindie': {
+        case 'Laika: Aged Through Blood': {
             return <>
             <div className="details-box" onClick={() => setCurrentProject(null)}></div>
             <section className="details">
                 <h2>{currentProject}</h2>
-                <h5>"Tinder for Video Games"</h5>
+                <h5>"Laika: Aged Through Blood is a western-inspired motorvania set in a post-apocalyptic wasteland. 
+                    It is the story about a tribe oppressed by occupant forces, and the personal story of a mother 
+                    coyote warrior who descends on an endless path of vengeance to take back what her people lost."</h5>
                 <div className="details-description">
-                    <ul>
-                    <li><strong>Backend:</strong> Custom web scraper interacts with the Steam API</li>
-                    <li>Headless browser <a href="https://www.npmjs.com/package/puppeteer" target="_blank" rel="noreferrer">Pupeteer</a> used to collect metadata and media</li>
-                    <li>REST API <a href="https://github.com/DanMossDev/Steam-Rolled" target="_blank" rel="noreferrer">Steam-Rolled</a>, utilises <em>Express and PostgreSQL</em></li>
-                    <li>Built following MVC patterns and using Jest/Supertest for TDD</li>
-                    </ul><ul>
-                    <li><strong>Frontend:</strong> Users can swipe to like or dislike games</li>
-                    <li> When in mobile mode, interact with touch controlled card swiping</li>
-                    <li> View all of their matches, and log in to store their matches</li>
+                    <pp>
+                    As the only programmer working full time on porting this project, I was able to successfully port the
+                    game to PlayStation 4/5, Xbox One/Series, and Nintendo Switch. During the process code was built in
+                    a reusable and extensible way and was used to help create a studio wide "porting toolkit" which has
+                    greatly improved efficiency in creating ports.
+                    </pp><ul>
+                    <strong>Skills / Design Patterns / Tools</strong>
+                    <li>Experience getting a project through TRCs for all modern platforms</li>
+                    <li>Adaptation of HLSL shaders to work on console hardware</li>
+                    <li>Creation and utilisation of a variety of tools including a platform specific texture limiter</li>
+                    <li>Extensive optimisations to increase performance on limited hardware</li>
+                    {/* <a href="https://youtu.be/qG7T6AR38rM" target="_blank" rel="noreferrer">Watch a gameplay demo here</a> */}
                     </ul>
                 </div>
                 <table>
                     <tbody>
-                    <tr>
-                        <th>Backend</th>
-                        <th>Frontend</th>
-                    </tr>
-                    <tr>
                     <td>
-                        <img src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JS logo"/>
-                        <img src="https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg" alt="PostgreSQL logo"/>
-                        <img src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="NodeJS logo"/>
+                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
+                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
                     </td>
-                    <td>
-                        <img src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JS logo"/>
-                        <img src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5 logo"/>
-                        <img src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3 logo"/>                 
-                    </td></tr>
                     </tbody>
                 </table>
             </section>
             </>
         }
-        case 'Spot|You': {
+        case 'Pine Hearts': {
             return <>
             <div className="details-box" onClick={() => setCurrentProject(null)}></div>
             <section className="details">
                 <h2>{currentProject}</h2>
-                <h5>"Transfer playlists from Spotify to YouTube Music"</h5>
+                <h5>"Pine Hearts is a cosy little narrative-adventure game set in the sleepy scenery of Pine Hearts Caravan Park. 
+                    Explore the great outdoors as you uncover items, unlock new paths, and discover all the little secrets 
+                    stuffed throughout the Park."</h5>
                 <div className="details-description">
-                    <ul>
-                    <li><strong>Frontend:</strong> Users log in to Spotify and Google accounts with OAuth</li>
-                    <li>Can select any of their Spotify playlists and transfer them to YouTube and YouTube Music</li>
-                    <li>Upon successful completion, are provided with a link to the newly created playlist</li>
-                    </ul>
-                    <p>Due to Google API's limitation, without being added as a test user you cannot complete a transfer.</p>
-                    <a href="https://www.youtube.com/watch?v=t_o1uDLeaiE" target="_blank" rel="noreferrer">A live demo can be viewed here</a>
-                </div>
-                <table>
-                    <tbody>
-                    <tr>
-                        <th>Frontend</th>
-                    </tr>
-                    <tr>
-                    <td>
-                        <img src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JS logo"/>
-                        <img src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React logo"/>
-                        <img src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3 logo"/>              
-                    </td></tr>
-                    </tbody>
-                </table>
-            </section>
-            </>
-        }
-        case 'All A-Board': {
-            return <>
-            <div className="details-box" onClick={() => setCurrentProject(null)}></div>
-            <section className="details">
-                <h2>{currentProject}</h2>
-                <h5>"View, vote, and comment on reviews for board games"</h5>
-                <div className="details-description">
-                    <ul>
-                    <li><strong>Backend:</strong> RESTful API <a href="https://github.com/DanMossDev/board-game-api" target="_blank" rel="noreferrer">Bee-Gee</a>, utilises <em>Express and PostgreSQL</em></li>
-                    <li>Constructed according to MVC patterns and tested using Jest and Supertest</li>
-                    </ul><ul>
-                    <li><strong>Frontend:</strong> Users can select an account and browse a number of reviews</li>
-                    <li> React Router implemented to allow users to share links to specific sites</li>
-                    <li> Custom hooks for cleaner code, media queries, optimistic rending and semantic HTML for improved UX</li>
+                    <pp>
+                    As well as contributions to the usual TRCs such as Switch specific handling of serialisation, user flow, etc.,
+                    I was responsible for creating and implementing a package that wrapped around the Unity Input System and allowed
+                    us to get gyroscope/accelerometer motion input, as well as touch screen input from the Switch. The package neatly
+                    collects this input, reduces noise and applies appropriate transformations on the data to have it usable alongside
+                    standard Unity code; and also provides tools for designers to be able to create "gestures" via scriptable objects.
+                    </pp><ul>
+                    <strong>Skills / Design Patterns / Tools</strong>
+                    <li>Packagified sixaxis, touch screen and accelerometer specific input layer</li>
+                    <li>Successful integration of abstracted code into a new project</li>
+                    <li>Data driven design of tools for designers</li>
                     </ul>
                 </div>
                 <table>
                     <tbody>
-                    <tr>
-                        <th>Backend</th>
-                        <th>Frontend</th>
-                    </tr>
-                    <tr>
                     <td>
-                        <img src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JS logo"/>
-                        <img src="https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg" alt="PostgreSQL logo"/>
-                        <img src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="NodeJS logo"/>
+                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
+                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
                     </td>
-                    <td>
-                        <img src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="JS logo"/>
-                        <img src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3 logo"/>                 
-                    </td></tr>
                     </tbody>
                 </table>
             </section>
             </>
         }
-        case 'Out of Water: Plenty More Fish in the Sea': {
+        case 'Hellboy Web of Wyrd': {
+            return <>
+            <div className="details-box" onClick={() => setCurrentProject(null)}></div>
+            <section className="details">
+                <h2>{currentProject}</h2>
+                <h5>"Hellboy Web of Wyrd is a roguelike action brawler with an original story created in partnership with Dark Horse 
+                    Comics and Hellboy creator Mike Mignola. When an agent of the B.P.R.D. goes missing, Hellboy is sent to investigate; 
+                    pulling him into the depths of the Wyrd."</h5>
+                <div className="details-description">
+                    <pp>
+                    Largely a supporting role, provided feedback and help with some platform specific problems. This project in particular
+                    required a huge amount of optimisation to viably run on consoles at an acceptable framerate due to its intense visuals,
+                    particularly post-processing.
+                    <br />  
+                    </pp><ul>
+                    <strong>Skills / Design Patterns / Tools</strong>
+                    <li>Ability to work in an extensive preexisting codebase with which I was not familiar</li>
+                    <li>Substantial optimisations, particularly on the lower end hardware</li>
+                    </ul>
+                </div>
+                <table>
+                    <tbody>
+                    <td>
+                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
+                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
+                    </td>
+                    </tbody>
+                </table>
+            </section>
+            </>
+        }
+        case 'Out of Water': {
             return <>
             <div className="details-box" onClick={() => setCurrentProject(null)}></div>
             <section className="details">

@@ -1,8 +1,8 @@
 import './App.css';
 import headshot from './images/headshot.png'
-import tindie from './images/tindie.jpg'
-import allaboard from './images/allaboard.JPG'
-import spotyou from './images/spotyou.jpg'
+import laika from './images/Laika.avif'
+import hellboy from './images/Hellboy.jpg'
+import pinehearts from './images/pine_hearts.png'
 import outofwater from './images/fits_thumb.png'
 import justintime from './images/JiT_SS.png'
 import soulsiphon from './images/SS_SS.png'
@@ -32,14 +32,51 @@ function App() {
     <About />
     <section id="games" className="games">
       <h4 className="projectsection">Click image to get live version</h4>
-      <Game setCurrentProject={setCurrentProject} title="Out of Water: Plenty More Fish in the Sea" liveURL="https://purplepuffer.itch.io/out-of-water" gitURL="https://github.com/DanMossDev/game-off-22" imgURL={outofwater} bio="Fast paced physics based platformer"/>
-      <Game setCurrentProject={setCurrentProject} title="Just in Time" liveURL="https://purplepuffer.itch.io/just-in-time" gitURL="https://github.com/DanMossDev/just-in-time" imgURL={justintime} bio="Megacorp warehouse worker simulator"/>
-      <Game setCurrentProject={setCurrentProject} title="Soul Siphon" liveURL="https://purplepuffer.itch.io/soul-siphon" gitURL="https://github.com/DanMossDev/SoulSiphon" imgURL={soulsiphon} bio="Steal your enemies' magical powers, but at what cost..."/>
+      <Game 
+        setCurrentProject={setCurrentProject} 
+        title="Laika: Aged Through Blood" 
+        liveURL="https://store.steampowered.com/app/1796220/Laika_Aged_Through_Blood/" 
+        imgURL={laika} 
+        bio="Primary programmer responsible for bringing the title to all modern consoles"
+      />
+      <Game 
+        setCurrentProject={setCurrentProject} 
+        title="Pine Hearts" 
+        liveURL="https://store.steampowered.com/app/1781010/Pine_Hearts/" 
+        imgURL={pinehearts} 
+        bio="Assisted in porting project to Nintendo Switch, including implementation of motion gesture controls"
+      />
+      <Game 
+        setCurrentProject={setCurrentProject} 
+        title="Hellboy Web of Wyrd" 
+        liveURL="https://store.steampowered.com/app/2160480/Hellboy_Web_of_Wyrd/" 
+        imgURL={hellboy} 
+        bio="Assisted in porting project to all modern consoles"
+      />
     </section>
     <section id="projects" className="projects">
-      <Project setCurrentProject={setCurrentProject} title="Tindie" liveURL="https://danmossdev.github.io/Tindie/" gitURL="https://github.com/DanMossDev/Tindie" imgURL={tindie} bio="Match with your perfect indie game"/>
-      <Project setCurrentProject={setCurrentProject} title="Spot|You" liveURL="https://danmossdev.github.io/ill-spot-you-bro/" gitURL="https://github.com/DanMossDev/ill-spot-you-bro/" imgURL={spotyou} bio="Transfer from Spotify to YouTube"/>
-      <Project setCurrentProject={setCurrentProject} title="All A-Board" liveURL="https://danmossdev.github.io/all-a-board/" gitURL="https://github.com/DanMossDev/all-a-board" imgURL={allaboard} bio="Social media for bored-board gamers"/>
+      <Project 
+        setCurrentProject={setCurrentProject} 
+        title="Out of Water" 
+        liveURL="https://purplepuffer.itch.io/out-of-water" 
+        gitURL="https://github.com/DanMossDev/game-off-22" 
+        imgURL={outofwater} 
+        bio="Fast paced physics based platformer"
+      />
+      <Project 
+        setCurrentProject={setCurrentProject} 
+        title="Just in Time" 
+        liveURL="https://purplepuffer.itch.io/just-in-time" 
+        gitURL="https://github.com/DanMossDev/just-in-time" 
+        imgURL={justintime} bio="Megacorp warehouse worker simulator"
+      />
+      <Project 
+        setCurrentProject={setCurrentProject} 
+        title="Soul Siphon" 
+        liveURL="https://purplepuffer.itch.io/soul-siphon" 
+        gitURL="https://github.com/DanMossDev/SoulSiphon" 
+        imgURL={soulsiphon} bio="Metroidvania where you absorb your enemies' powers"
+      />
     </section>
     <ProjectDetails currentProject={currentProject} setCurrentProject={setCurrentProject}/>
     </main>

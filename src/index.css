@@ -4,7 +4,7 @@
 {
     background-color: hsla(252, 100%, 7%, 0.74);
     background: linear-gradient(70deg, hsla(252, 100%, 7%, 0.8), hsla(252, 100%, 7%, .9));
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', Roboto, monospace;
     font-size: 3vmin;
     max-width: 100%;
     overflow-x: hidden;
@@ -141,7 +141,7 @@ nav a:hover {
 }
 
 .gameimg {
-    width: 60vmax;
+    width: 90%;
 }
 
 .container:hover {
@@ -165,7 +165,6 @@ nav a:hover {
 .container {
     padding: 10px;
     margin: 3vmax 0;
-
     width: 25vmax;
     background-color: whitesmoke;
     text-align: center;
@@ -186,7 +185,7 @@ nav a:hover {
 .game {
     padding: 10px;
     margin: 3vmax 0;
-    width: 75vmax;
+    width: 90vmin;
     background-color: whitesmoke;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

@@ -17,9 +17,5 @@ export default function Game({setCurrentProject, title, liveURL, gitURL, imgURL,
           <button onClick={() => setCurrentProject(title)} className="clickme details-button">
               View Project Details
           </button>
-          <hr />
-          <button onClick={() => {window.open(gitURL, "_blank")}} className="clickme source-button">
-              View Source Code
-          </button>
         </div>
   }
