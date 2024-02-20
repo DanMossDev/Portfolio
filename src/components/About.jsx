@@ -22,7 +22,7 @@ export default function About() {
         creating custom physics systems, and working alongside designers and artists to create some
         remarkable stories for customers.
         Prior to working in the gaming industry, I studied physics, acted, and developed for the 
-        web using predominantly using JavaScript (React/PixiJS), Python, and SQL.
+        web predominantly using JavaScript (React/PixiJS), Python, and SQL.
         <br />
         <br />
         I have a huge passion for problem solving, and love an excuse to discuss problems with others!
