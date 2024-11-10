@@ -1,8 +1,11 @@
 import './App.css';
 import headshot from './images/headshot.png'
+import precinct from './images/precinct.avif'
+import radrabbit from './images/RR.png'
 import laika from './images/Laika.avif'
 import hellboy from './images/Hellboy.jpg'
 import pinehearts from './images/pine_hearts.png'
+import prototype from './images/prototype.png'
 import outofwater from './images/fits_thumb.png'
 import justintime from './images/JiT_SS.png'
 import soulsiphon from './images/SS_SS.png'
@@ -34,10 +37,31 @@ function App() {
       <h4 className="projectsection">Click image to get live version</h4>
       <Game 
         setCurrentProject={setCurrentProject} 
+        title="The Precinct" 
+        liveURL="https://store.steampowered.com/app/490110/The_Precinct/" 
+        imgURL={precinct} 
+        bio="Animation and gameplay programmer"
+      />
+      <Game 
+        setCurrentProject={setCurrentProject} 
         title="Laika: Aged Through Blood" 
         liveURL="https://store.steampowered.com/app/1796220/Laika_Aged_Through_Blood/" 
         imgURL={laika} 
         bio="Primary programmer responsible for bringing the title to all modern consoles"
+      />
+        <Game 
+          setCurrentProject={setCurrentProject} 
+          title="RadRabbit" 
+          liveURL="https://apps.apple.com/gb/app/radrabbit/id6670271065" 
+          imgURL={radrabbit} 
+          bio="Primary programmer for a UI heavy mobile wellness app"
+        />
+      <Game 
+        setCurrentProject={setCurrentProject} 
+        title="Hellboy Web of Wyrd" 
+        liveURL="https://store.steampowered.com/app/2160480/Hellboy_Web_of_Wyrd/" 
+        imgURL={hellboy} 
+        bio="Assisted in porting project to all modern consoles"
       />
       <Game 
         setCurrentProject={setCurrentProject} 
@@ -48,10 +72,9 @@ function App() {
       />
       <Game 
         setCurrentProject={setCurrentProject} 
-        title="Hellboy Web of Wyrd" 
-        liveURL="https://store.steampowered.com/app/2160480/Hellboy_Web_of_Wyrd/" 
-        imgURL={hellboy} 
-        bio="Assisted in porting project to all modern consoles"
+        title="Prototypes" 
+        imgURL={prototype} 
+        bio="Creation of a number of professional pitches/prototypes with positive publisher responses"
       />
     </section>
     <section id="projects" className="projects">

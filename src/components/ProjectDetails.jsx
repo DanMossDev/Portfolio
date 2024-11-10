@@ -1,5 +1,30 @@
 export default function ProjectDetails({currentProject, setCurrentProject}) {
     switch(currentProject) {
+        case 'The Precinct': {
+            return <>
+            <div className="details-box" onClick={() => setCurrentProject(null)}></div>
+            <section className="details">
+                <h2>{currentProject}</h2>
+                <h5>"Averno City, 1983. Gangs rule the streets and your father lies restless in his grave. Clean up the city,
+                    uncover the truth, and embark on thrilling vehicle chases through destructible environments in this neon-noir
+                    action sandbox police game."</h5>
+                <div className="details-description">
+                    <pp>
+                    After being brought on by the guys at Fallen Tree Games and Kwalee, I immediately jumped into the existing
+                    codebase and started fixing bugs and completing tasks from day one. I predominantly focused my attentions on
+                    animation and gameplay programming though as a systems heavy game I was also involved in programming for the
+                    AI, vehicles, physics, graphics and more.
+                    </pp><ul>
+                    <strong>Skills / Design Patterns / Tools</strong>
+                    <li>Focus on animation programming, extensive use of StateMachineBehaviours and inverse kinematics</li>
+                    <li>Experience diving into an extensive codebase following different standards/patterns than I had used before</li>
+                    <li>Constant communication with clients to ensure their design is being brought to life how they imagined it</li>
+                    <li>Assistance with demos for Steam Next Fest and ports to Xbox Series and PlayStation 5</li>
+                    </ul>
+                </div>
+            </section>
+            </>
+        }
         case 'Laika: Aged Through Blood': {
             return <>
             <div className="details-box" onClick={() => setCurrentProject(null)}></div>
@@ -10,27 +35,42 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                     coyote warrior who descends on an endless path of vengeance to take back what her people lost."</h5>
                 <div className="details-description">
                     <pp>
-                    As the only programmer working full time on porting this project, I was able to successfully port the
-                    game to PlayStation 4/5, Xbox One/Series, and Nintendo Switch. During the process code was built in
-                    a reusable and extensible way and was used to help create a studio wide "porting toolkit" which has
-                    greatly improved efficiency in creating ports.
+                    As the porting programmer for this project, I was able to successfully bring the game to PlayStation 4/5, 
+                    Xbox One/Series, and Nintendo Switch. During the process code was built in a reusable and extensible way 
+                    and was used to help create a studio wide "porting toolkit" which has greatly improved efficiency in creating ports.
                     </pp><ul>
                     <strong>Skills / Design Patterns / Tools</strong>
-                    <li>Experience getting a project through TRCs for all modern platforms</li>
-                    <li>Adaptation of HLSL shaders to work on console hardware</li>
-                    <li>Creation and utilisation of a variety of tools including a platform specific texture limiter</li>
-                    <li>Extensive optimisations to increase performance on limited hardware</li>
-                    {/* <a href="https://youtu.be/qG7T6AR38rM" target="_blank" rel="noreferrer">Watch a gameplay demo here</a> */}
+                    <li>Successful initial TRC passes for each platform, as well as multiple patches</li>
+                    <li>Adaptation of HLSL shaders and a custom SRP renderer setup to work on console hardware</li>
+                    <li>Creation and utilisation of a variety of tools including texture limiter</li>
+                    <li>Huge number of code and asset optimisations to increase performance - especially in reducing memory footprint</li>
                     </ul>
                 </div>
-                <table>
-                    <tbody>
-                    <td>
-                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
-                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
-                    </td>
-                    </tbody>
-                </table>
+            </section>
+            </>
+        }
+        case 'RadRabbit': {
+            return <>
+            <div className="details-box" onClick={() => setCurrentProject(null)}></div>
+            <section className="details">
+                <h2>{currentProject}</h2>
+                <h5>"Make Your Bunny Happy & Healthy—One Bite at a Time!
+                Meet RadRabbit — your adorable new bunny friend who’s here to help you eat more fruits and veggies! 
+                Every day, your bunny starts off feeling a bit sad, but with your help, it can become the happiest, 
+                healthiest rabbit around! How? By logging the fruits and vegetables you eat throughout the day!"</h5>
+                <div className="details-description">
+                    <pp>
+                    Working alongside our UI/UX lead and client Habitable Earth to bring this charming little app to life was a pleasure.
+                    Initially it was intended to just be a prototype, but thanks to the quick turnaround and high level of
+                    quality provided, after a few rounds of feedback the client released into a private beta before deciding
+                    the send the app live permanently.
+                    </pp><ul>
+                    <strong>Skills / Design Patterns / Tools</strong>
+                    <li>UI heavy mobile design, fully responsive and works on all screen sizes</li>
+                    <li>Custom intelligent database search for logging daily fruit/veg inputs</li>
+                    <li>Analytics, notifications, touch input, high focus on user experience</li>
+                    </ul>
+                </div>
             </section>
             </>
         }
@@ -56,14 +96,6 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                     <li>Data driven design of tools for designers</li>
                     </ul>
                 </div>
-                <table>
-                    <tbody>
-                    <td>
-                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
-                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
-                    </td>
-                    </tbody>
-                </table>
             </section>
             </>
         }
@@ -87,14 +119,31 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                     <li>Substantial optimisations, particularly on the lower end hardware</li>
                     </ul>
                 </div>
-                <table>
-                    <tbody>
-                    <td>
-                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
-                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
-                    </td>
-                    </tbody>
-                </table>
+            </section>
+            </>
+        }
+        case 'Prototypes': {
+            return <>
+            <div className="details-box" onClick={() => setCurrentProject(null)}></div>
+            <section className="details">
+                <h2>{currentProject}</h2>
+                <h5>Well recieved publisher pitches with a variety of genres and technical requirements, 
+                    from procedurally generated fifty player live service games to intensely difficult
+                    hand crafted single player metroidvanias.
+                </h5>
+                <div className="details-description">
+                    <pp>
+                    Working alongside a folks at Hyper Luminal Games, we crafted a number of amazing prototypes 
+                    and pitch decks which have resulted in ongoing follow ups and negotiations with several 
+                    publishers about continued development and potential releases in the next few years.
+                    </pp><ul>
+                    <strong>Skills / Design Patterns / Tools</strong>
+                    <li>Massively multiplayer (50 concurrent players) real time networked PVP/PVE game</li>
+                    <li>IP based Metroidvania with custom physics system to allow for intricate gravity manipulation</li>
+                    <li>Shader programming to help get early visual fidelity without losing the "prototype" feel</li>
+                    <li>Involvement in pitch meetings with worldwide publishers</li>
+                    </ul>
+                </div>
             </section>
             </>
         }
@@ -117,17 +166,8 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                     <li>External API / Finite state machines / Singletons</li>
                     <li>Boss enemy with built out AI using custom finite state machine</li>
                     <li>Custom physics implemented on top of rigid bodies</li>
-                    {/* <a href="https://youtu.be/qG7T6AR38rM" target="_blank" rel="noreferrer">Watch a gameplay demo here</a> */}
                     </ul>
                 </div>
-                <table>
-                    <tbody>
-                    <td>
-                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
-                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
-                    </td>
-                    </tbody>
-                </table>
             </section>
             </>
         }
@@ -151,14 +191,6 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                     <a href="https://youtu.be/qG7T6AR38rM" target="_blank" rel="noreferrer">Watch a gameplay demo here</a>
                     </ul>
                 </div>
-                <table>
-                    <tbody>
-                    <td>
-                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
-                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
-                    </td>
-                    </tbody>
-                </table>
             </section>
             </>
         }
@@ -185,14 +217,7 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                     <a href="https://youtu.be/2RTPrV8qXr8" target="_blank" rel="noreferrer">Watch a gameplay demo here</a>
                     </ul>
                 </div>
-                <table>
-                    <tbody>
-                    <td>
-                    <img className="gametech" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
-                    <img className="gametech" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Unity"/>
-                    </td>
-                    </tbody>
-                </table>
+
             </section>
             </>
         }
