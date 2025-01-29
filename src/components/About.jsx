@@ -7,11 +7,11 @@ export default function About() {
       <Carousel className="carousel">
         <img className="skill-img" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#"/>  
         <img className="skill-img" src="https://i.redd.it/tu3gt6ysfxq71.png" alt="Unity"/>
+        <img className="skill-img" src="https://profilinator.rishav.dev/skills-assets/cplusplus-original.svg" alt="C++"/>
         <img className="skill-img" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript"/>
+        <img className="skill-img" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python"/>
         <img className="skill-img" src="https://images.opencollective.com/pixijs/f97b489/logo/256.png" alt="PixiJS"/>
         <img className="skill-img" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React"/>  
-        <img className="skill-img" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python"/>
-        <img className="skill-img" src="https://profilinator.rishav.dev/skills-assets/cplusplus-original.svg" alt="C++"/>
         <img className="skill-img" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5"/>  
         <img className="skill-img" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3"/>
         <img className="skill-img" src="https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg" alt="PostgreSQL"/>  
