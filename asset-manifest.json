@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.11ff1f5b.css",
-    "main.js": "/Portfolio/static/js/main.f731c3fb.js",
+    "main.js": "/Portfolio/static/js/main.24227767.js",
     "static/js/453.062494ee.chunk.js": "/Portfolio/static/js/453.062494ee.chunk.js",
     "static/media/headshot.png": "/Portfolio/static/media/headshot.f2fd0d0f9baa922d9901.png",
     "static/media/prototype.png": "/Portfolio/static/media/prototype.5dfd31a45a009fa2760a.png",
@@ -12,15 +12,15 @@
     "static/media/pine_hearts.png": "/Portfolio/static/media/pine_hearts.6432200ce0e5faf41210.png",
     "static/media/SS_SS.png": "/Portfolio/static/media/SS_SS.52db07f1257553dcdd4b.png",
     "static/media/Laika.avif": "/Portfolio/static/media/Laika.b92a1dae7b3e2825dd5f.avif",
+    "static/media/DanielMoss_CV.pdf": "/Portfolio/static/media/DanielMoss_CV.9d7d94ada63da8119dfd.pdf",
     "static/media/precinct.avif": "/Portfolio/static/media/precinct.a82d5732656184578e27.avif",
-    "static/media/DanielMoss_CV.pdf": "/Portfolio/static/media/DanielMoss_CV.880950aea32ae8c0fd2f.pdf",
     "index.html": "/Portfolio/index.html",
     "main.11ff1f5b.css.map": "/Portfolio/static/css/main.11ff1f5b.css.map",
-    "main.f731c3fb.js.map": "/Portfolio/static/js/main.f731c3fb.js.map",
+    "main.24227767.js.map": "/Portfolio/static/js/main.24227767.js.map",
     "453.062494ee.chunk.js.map": "/Portfolio/static/js/453.062494ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11ff1f5b.css",
-    "static/js/main.f731c3fb.js"
+    "static/js/main.24227767.js"
   ]
 }
