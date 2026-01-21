@@ -1,5 +1,31 @@
 export default function ProjectDetails({currentProject, setCurrentProject}) {
     switch(currentProject) {
+        case 'Planted!': {
+            return <>
+                <div className="details-box" onClick={() => setCurrentProject(null)}></div>
+                <section className="details">
+                    <h2>{currentProject}</h2>
+                    <h5>"Dive into the single player campaign or head for multiplayer arena combat. 
+                        Approachable and immediate gameplay awaits; part harvesting sim, part sports game, 
+                        its focus is fun arcade action but skill and tactics come into play once you get to grips with the challenge."</h5>
+                    <div className="details-description">
+                        <pp>
+                            During my time alongside the lovely folks at Cloth Cat Games, I provided assistance with gameplay and network
+                            coding, and took primary ownership for developing one of the levels for the game, the Construction Site.
+                            This involved working closely with artists and designers to bring to life a multi-story arena with different
+                            gameplay events on each floor; while ensuring that it all worked seamlessly over the network. I also provided some
+                            graphics programming support in the form of shaders, and general optimisation/bugfixing.
+                        </pp><ul>
+                        <strong>Skills / Design Patterns / Tools</strong>
+                        <li>Network programming using Photon Fusion</li>
+                        <li>Level design grey-boxing using Blender and ProBuilder</li>
+                        <li>Working closely with artists to develop custom shaders</li>
+                        <li>Rapid iterative level design with multiple rounds of feedback from designers and stakeholders</li>
+                    </ul>
+                    </div>
+                </section>
+            </>
+        }
         case 'The Precinct': {
             return <>
             <div className="details-box" onClick={() => setCurrentProject(null)}></div>
@@ -133,9 +159,11 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                 </h5>
                 <div className="details-description">
                     <pp>
-                    Working alongside a folks at Hyper Luminal Games, we crafted a number of amazing prototypes 
-                    and pitch decks which have resulted in ongoing follow ups and negotiations with several 
-                    publishers about continued development and potential releases in the next few years.
+                    While working at Hyper Luminal Games, I was heavily involved in development of several prototypes 
+                    and pitch decks to publishers, as well as the meetings and negotiations which followed.
+                    <br />
+                    <br />
+                    At Cloth Cat Games, I have been working alongside an external client on an unannounced vertical slice.
                     </pp><ul>
                     <strong>Skills / Design Patterns / Tools</strong>
                     <li>Massively multiplayer (50 concurrent players) real time networked PVP/PVE game</li>

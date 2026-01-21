@@ -1,5 +1,6 @@
 import './App.css';
 import headshot from './images/headshot.png'
+import planted from './images/Planted.jpg'
 import precinct from './images/precinct.avif'
 import radrabbit from './images/RR.png'
 import laika from './images/Laika.avif'
@@ -35,72 +36,79 @@ function App() {
     <About />
     <section id="games" className="games">
       <h4 className="projectsection">Click image to get live version</h4>
+      <Game
+          setCurrentProject={setCurrentProject}
+          title="Planted!"
+          liveURL="https://games.clothcat.com/games/planted/"
+          imgURL={planted}
+          bio="Gameplay and Network Programmer, Level Design"
+      />
       <Game 
         setCurrentProject={setCurrentProject} 
         title="The Precinct" 
         liveURL="https://store.steampowered.com/app/490110/The_Precinct/" 
         imgURL={precinct} 
-        bio="Animation and gameplay programmer"
+        bio="Animation and Gameplay programmer"
       />
       <Game 
         setCurrentProject={setCurrentProject} 
         title="Laika: Aged Through Blood" 
         liveURL="https://store.steampowered.com/app/1796220/Laika_Aged_Through_Blood/" 
         imgURL={laika} 
-        bio="Primary programmer responsible for bringing the title to all modern consoles"
+        bio="Porting Programmer"
       />
         <Game 
           setCurrentProject={setCurrentProject} 
           title="RadRabbit" 
           liveURL="https://apps.apple.com/gb/app/radrabbit/id6670271065" 
           imgURL={radrabbit} 
-          bio="Primary programmer for a UI heavy mobile wellness app"
+          bio="UI Programmer"
         />
       <Game 
         setCurrentProject={setCurrentProject} 
         title="Hellboy Web of Wyrd" 
         liveURL="https://store.steampowered.com/app/2160480/Hellboy_Web_of_Wyrd/" 
         imgURL={hellboy} 
-        bio="Assisted in porting project to all modern consoles"
+        bio="Porting Programmer"
       />
       <Game 
         setCurrentProject={setCurrentProject} 
         title="Pine Hearts" 
         liveURL="https://store.steampowered.com/app/1781010/Pine_Hearts/" 
         imgURL={pinehearts} 
-        bio="Assisted in porting project to Nintendo Switch, including implementation of motion gesture controls"
+        bio="Porting Programmer"
       />
       <Game 
         setCurrentProject={setCurrentProject} 
-        title="Prototypes" 
+        title="Prototypes"
         imgURL={prototype} 
-        bio="Creation of a number of professional pitches/prototypes with positive publisher responses"
+        bio="Creation of a number of professional pitches/prototypes"
       />
     </section>
-    <section id="projects" className="projects">
-      <Project 
-        setCurrentProject={setCurrentProject} 
-        title="Out of Water" 
-        liveURL="https://purplepuffer.itch.io/out-of-water" 
-        gitURL="https://github.com/DanMossDev/game-off-22" 
-        imgURL={outofwater} 
-        bio="Fast paced physics based platformer"
-      />
-      <Project 
-        setCurrentProject={setCurrentProject} 
-        title="Just in Time" 
-        liveURL="https://purplepuffer.itch.io/just-in-time" 
-        gitURL="https://github.com/DanMossDev/just-in-time" 
-        imgURL={justintime} bio="Megacorp warehouse worker simulator"
-      />
-      <Project 
-        setCurrentProject={setCurrentProject} 
-        title="Soul Siphon" 
-        liveURL="https://purplepuffer.itch.io/soul-siphon" 
-        gitURL="https://github.com/DanMossDev/SoulSiphon" 
-        imgURL={soulsiphon} bio="Metroidvania where you absorb your enemies' powers"
-      />
-    </section>
+    {/*<section id="projects" className="projects">*/}
+    {/*  <Project */}
+    {/*    setCurrentProject={setCurrentProject} */}
+    {/*    title="Out of Water" */}
+    {/*    liveURL="https://purplepuffer.itch.io/out-of-water" */}
+    {/*    gitURL="https://github.com/DanMossDev/game-off-22" */}
+    {/*    imgURL={outofwater} */}
+    {/*    bio="Fast paced physics based platformer"*/}
+    {/*  />*/}
+    {/*  <Project */}
+    {/*    setCurrentProject={setCurrentProject} */}
+    {/*    title="Just in Time" */}
+    {/*    liveURL="https://purplepuffer.itch.io/just-in-time" */}
+    {/*    gitURL="https://github.com/DanMossDev/just-in-time" */}
+    {/*    imgURL={justintime} bio="Megacorp warehouse worker simulator"*/}
+    {/*  />*/}
+    {/*  <Project */}
+    {/*    setCurrentProject={setCurrentProject} */}
+    {/*    title="Soul Siphon" */}
+    {/*    liveURL="https://purplepuffer.itch.io/soul-siphon" */}
+    {/*    gitURL="https://github.com/DanMossDev/SoulSiphon" */}
+    {/*    imgURL={soulsiphon} bio="Metroidvania where you absorb your enemies' powers"*/}
+    {/*  />*/}
+    {/*</section>*/}
     <ProjectDetails currentProject={currentProject} setCurrentProject={setCurrentProject}/>
     </main>
   </> : <main className="loading-parent">
