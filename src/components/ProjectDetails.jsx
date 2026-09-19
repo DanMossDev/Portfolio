@@ -5,22 +5,18 @@ export default function ProjectDetails({currentProject, setCurrentProject}) {
                 <div className="details-box" onClick={() => setCurrentProject(null)}></div>
                 <section className="details">
                     <h2>{currentProject}</h2>
-                    <h5>"Dive into the single player campaign or head for multiplayer arena combat. 
-                        Approachable and immediate gameplay awaits; part harvesting sim, part sports game, 
-                        its focus is fun arcade action but skill and tactics come into play once you get to grips with the challenge."</h5>
+                    <h5>"Sow. Grow. Throw. Planted! is a chaotic 1-4 player combat game where gardens are arenas, plants are weapons, and grudges are settled one harvest at a time."</h5>
                     <div className="details-description">
                         <pp>
-                            During my time alongside the lovely folks at Cloth Cat Games, I provided assistance with gameplay and network
-                            coding, and took primary ownership for developing one of the levels for the game, the Construction Site.
-                            This involved working closely with artists and designers to bring to life a multi-story arena with different
-                            gameplay events on each floor; while ensuring that it all worked seamlessly over the network. I also provided some
-                            graphics programming support in the form of shaders, and general optimisation/bugfixing.
+                            I was brought on by Cloth Cat as a generalist to help finish up content and polish for the game.
+                            I have taken ownership of the single and multiplayer arenas for multiple levels, designing the levels
+                            and working with artists to set dress and finalise the levels.
                         </pp><ul>
                         <strong>Skills / Design Patterns / Tools</strong>
-                        <li>Network programming using Photon Fusion</li>
-                        <li>Level design grey-boxing using Blender and ProBuilder</li>
-                        <li>Working closely with artists to develop custom shaders</li>
-                        <li>Rapid iterative level design with multiple rounds of feedback from designers and stakeholders</li>
+                        <li>Netowrked gameplay programming, integrating with existing systems to ensure a consistent experience for all players</li>
+                        <li>Level design from greyboxing to final product, creation of a large amount of content for a preexisting design and codebase</li>
+                        <li>Constant iteration with a focus on finding the fun in the design, working directly with the rest of the team to bring it to life</li>
+                        <li>Assistance with various technical points with regards to console certification, networking, and product release</li>
                     </ul>
                     </div>
                 </section>
