@@ -39,9 +39,9 @@ function App() {
       <Game
           setCurrentProject={setCurrentProject}
           title="Planted!"
-          liveURL="https://games.clothcat.com/games/planted/"
+          liveURL="https://store.steampowered.com/app/3448000/Planted/"
           imgURL={planted}
-          bio="Gameplay and Network Programmer, Level Design"
+          bio="Network and gameplay programmer, level and gameplay design"
       />
       <Game 
         setCurrentProject={setCurrentProject} 
